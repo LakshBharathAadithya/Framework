@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.Listener"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="LoginTest(failed)">
+    <classes>
+      <class name="Tests.SATS">
+        <methods>
+          <include name="Refresh"/>
+          <include name="close_Browser"/>
+          <include name="browserSetup"/>
+          <include name="Digital_details"/>
+        </methods>
+      </class> <!-- Tests.SATS -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
